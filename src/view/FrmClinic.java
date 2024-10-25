@@ -31,12 +31,12 @@ public class FrmClinic extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         mitDoctor = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
         mnEspe = new javax.swing.JMenu();
         mitEspe = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1000, 700));
@@ -92,6 +92,16 @@ public class FrmClinic extends javax.swing.JFrame {
 
         mbOptions.add(jMenu1);
 
+        mnEspe.setText("Especialidades");
+
+        mitEspe.setText("Agregar Especialidades");
+        mnEspe.add(mitEspe);
+
+        jMenuItem5.setText("Buscar Especialidad");
+        mnEspe.add(jMenuItem5);
+
+        mbOptions.add(mnEspe);
+
         jMenu3.setText("Atenciones");
 
         jMenuItem3.setText("Agregar Atención");
@@ -106,16 +116,6 @@ public class FrmClinic extends javax.swing.JFrame {
         jMenu3.add(jMenuItem4);
 
         mbOptions.add(jMenu3);
-
-        mnEspe.setText("Especialidades");
-
-        mitEspe.setText("Agregar Especialidades");
-        mnEspe.add(mitEspe);
-
-        jMenuItem5.setText("Buscar Especialidad");
-        mnEspe.add(jMenuItem5);
-
-        mbOptions.add(mnEspe);
 
         setJMenuBar(mbOptions);
 
