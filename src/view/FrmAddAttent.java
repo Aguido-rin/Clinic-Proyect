@@ -26,7 +26,6 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         txtDniPatient = new javax.swing.JTextField();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        btnAddPatient = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -42,7 +41,6 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
         jTextArea2 = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
-        btnAddPatient2 = new javax.swing.JButton();
         btnAddPatient1 = new javax.swing.JButton();
         btnAddPatient4 = new javax.swing.JButton();
         txtSearchDoctor = new javax.swing.JTextField();
@@ -51,8 +49,8 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
         jTable1 = new javax.swing.JTable();
         jLabel11 = new javax.swing.JLabel();
         btnAddPatient5 = new javax.swing.JButton();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
+        txtSearchDoctor1 = new javax.swing.JTextField();
+        btnAddPatient6 = new javax.swing.JButton();
 
         setClosable(true);
         setMaximizable(true);
@@ -76,11 +74,6 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
 
         jDateChooser1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Fecha", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
         jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 230, 50));
-
-        btnAddPatient.setBackground(new java.awt.Color(0, 153, 153));
-        btnAddPatient.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAddPatient.setText("BUSCAR");
-        jPanel1.add(btnAddPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 220, 110, 40));
 
         jLabel3.setText("Fecha de nacimiento: ");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, 20));
@@ -132,12 +125,7 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
         jTextArea3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Tratamiento", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
         jScrollPane3.setViewportView(jTextArea3);
 
-        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 240, 110));
-
-        btnAddPatient2.setBackground(new java.awt.Color(0, 153, 153));
-        btnAddPatient2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAddPatient2.setText("DETALLES");
-        jPanel1.add(btnAddPatient2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 610, 130, 40));
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 90, 240, 110));
 
         btnAddPatient1.setBackground(new java.awt.Color(0, 153, 153));
         btnAddPatient1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
@@ -151,14 +139,14 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
 
         txtSearchDoctor.setBackground(new java.awt.Color(204, 255, 255));
         txtSearchDoctor.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        txtSearchDoctor.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Código médico", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Times New Roman", 1, 12))); // NOI18N
+        txtSearchDoctor.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Código atención", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Times New Roman", 1, 12))); // NOI18N
         txtSearchDoctor.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtSearchDoctor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSearchDoctorActionPerformed(evt);
             }
         });
-        jPanel1.add(txtSearchDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 220, 180, 40));
+        jPanel1.add(txtSearchDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 210, 150, 40));
 
         btnAddPatient3.setBackground(new java.awt.Color(0, 153, 153));
         btnAddPatient3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
@@ -167,18 +155,18 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Dni Paciente", "Fecha", "Especialidad", "Medico", "Descripcion Atencion"
+                "Código atención", "Dni Paciente", "Fecha", "Especialidad", "Medico", "Descripcion Atencion"
             }
         ));
         jScrollPane4.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, 890, 210));
+        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 1020, 300));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setText("REGISTRO ATENCIÓN");
@@ -189,12 +177,21 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
         btnAddPatient5.setText("AGREGAR");
         jPanel1.add(btnAddPatient5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, 150, 30));
 
-        jTextArea4.setColumns(20);
-        jTextArea4.setRows(5);
-        jTextArea4.setBorder(javax.swing.BorderFactory.createTitledBorder("Detalles Atención"));
-        jScrollPane5.setViewportView(jTextArea4);
+        txtSearchDoctor1.setBackground(new java.awt.Color(204, 255, 255));
+        txtSearchDoctor1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtSearchDoctor1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Código médico", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Times New Roman", 1, 12))); // NOI18N
+        txtSearchDoctor1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtSearchDoctor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSearchDoctor1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtSearchDoctor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 260, 180, 40));
 
-        jPanel1.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 610, 510, 120));
+        btnAddPatient6.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient6.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient6.setText("BUSCAR");
+        jPanel1.add(btnAddPatient6, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 260, 110, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 1070, 770));
 
@@ -205,14 +202,17 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSearchDoctorActionPerformed
 
+    private void txtSearchDoctor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchDoctor1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSearchDoctor1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnAddPatient;
     public javax.swing.JButton btnAddPatient1;
-    public javax.swing.JButton btnAddPatient2;
     public javax.swing.JButton btnAddPatient3;
     public javax.swing.JButton btnAddPatient4;
     public javax.swing.JButton btnAddPatient5;
+    public javax.swing.JButton btnAddPatient6;
     public javax.swing.JComboBox<String> cbxEspec;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
@@ -230,13 +230,12 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
     public javax.swing.JTextField txtDniPatient;
     public javax.swing.JTextField txtSearchDoctor;
+    public javax.swing.JTextField txtSearchDoctor1;
     // End of variables declaration//GEN-END:variables
 }
