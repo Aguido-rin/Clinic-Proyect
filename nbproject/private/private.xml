@@ -3,7 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Documents/NetBeansProjects/ProyectoClínica/src/view/FrmClinic.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/modelo/Paciente.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/controlador/ControlPaciente.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmAddAttent.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmAddDoctor.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmAtencionEspecialidad.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmLogin.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmAddEspec.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/procesos/ProcesosPaciente.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmClinic.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmHistoriasClinicas.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/persistencia/AlmacenarPaciente.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmSearchPatient.java</file>
+            <file>file:/C:/Workspace/AlgoritmosEstructurasDeDatos/Clinic-Proyect/src/view/FrmAddPatient.java</file>
         </group>
     </open-files>
 </project-private>
