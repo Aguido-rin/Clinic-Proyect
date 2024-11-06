@@ -166,7 +166,7 @@ public class FrmAddAttent extends javax.swing.JInternalFrame {
         ));
         jScrollPane4.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 1020, 300));
+        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 1020, 300));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setText("REGISTRO ATENCIÓN");
