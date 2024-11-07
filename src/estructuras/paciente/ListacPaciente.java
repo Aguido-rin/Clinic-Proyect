@@ -5,6 +5,6 @@ package estructuras.paciente;
  *
  * @author Sergio
  */
-public class ListaPaciente {
+public class ListacPaciente {
     
 }
