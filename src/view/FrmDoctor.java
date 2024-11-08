@@ -4,12 +4,12 @@ package view;
  *
  * @author AguidoRin
  */
-public class FrmAddDoctor extends javax.swing.JInternalFrame {
+public class FrmDoctor extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FrmIntClínica
      */
-    public FrmAddDoctor() {
+    public FrmDoctor() {
         initComponents();
     }
 
@@ -166,7 +166,7 @@ public class FrmAddDoctor extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     public javax.swing.JTextField txtCode;
-    private javax.swing.JTextField txtDni;
+    public javax.swing.JTextField txtDni;
     public javax.swing.JTextField txtDni1;
     public javax.swing.JTextField txtName;
     public javax.swing.JTextField txtTelefono;

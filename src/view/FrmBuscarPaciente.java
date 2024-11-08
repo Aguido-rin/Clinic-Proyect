@@ -4,12 +4,12 @@ package view;
  *
  * @author AguidoRin
  */
-public class FrmSearchPatient extends javax.swing.JInternalFrame {
+public class FrmBuscarPaciente extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FrmEstudiante
      */
-    public FrmSearchPatient() {
+    public FrmBuscarPaciente() {
         initComponents();
     }
 
