@@ -27,7 +27,7 @@ public class FrmPaciente extends javax.swing.JInternalFrame {
         txtNombres = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         txtDireccion = new javax.swing.JTextField();
-        cbxGénero = new javax.swing.JComboBox<>();
+        cbxGenero = new javax.swing.JComboBox<>();
         btnBuscardni = new javax.swing.JButton();
         txtTelefono = new javax.swing.JTextField();
         jdcFechaNacimiento = new com.toedter.calendar.JDateChooser();
@@ -70,16 +70,16 @@ public class FrmPaciente extends javax.swing.JInternalFrame {
         txtDireccion.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dirección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
         jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 240, -1));
 
-        cbxGénero.setBackground(new java.awt.Color(204, 255, 255));
-        cbxGénero.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
-        cbxGénero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Femenino" }));
-        cbxGénero.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Género", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
-        cbxGénero.addActionListener(new java.awt.event.ActionListener() {
+        cbxGenero.setBackground(new java.awt.Color(204, 255, 255));
+        cbxGenero.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        cbxGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Femenino" }));
+        cbxGenero.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Género", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        cbxGenero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxGéneroActionPerformed(evt);
+                cbxGeneroActionPerformed(evt);
             }
         });
-        jPanel1.add(cbxGénero, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 240, 40));
+        jPanel1.add(cbxGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 240, 40));
 
         btnBuscardni.setBackground(new java.awt.Color(0, 153, 153));
         btnBuscardni.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
@@ -145,9 +145,9 @@ public class FrmPaciente extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cbxGéneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxGéneroActionPerformed
+    private void cbxGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxGeneroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cbxGéneroActionPerformed
+    }//GEN-LAST:event_cbxGeneroActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -156,7 +156,7 @@ public class FrmPaciente extends javax.swing.JInternalFrame {
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnLimpiar;
     public javax.swing.JButton btnModificar;
-    public javax.swing.JComboBox<String> cbxGénero;
+    public javax.swing.JComboBox<String> cbxGenero;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

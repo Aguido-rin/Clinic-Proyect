@@ -12,9 +12,9 @@ public class ProcesosPaciente {
     public static void presentacion(FrmPaciente fp) {
         fp.setTitle("Registro de Pacientes...");
         fp.setVisible(true);
-        fp.cbxGénero.removeAllItems();
-        fp.cbxGénero.addItem("MASCULINO");
-        fp.cbxGénero.addItem("FEMENINO");
+        fp.cbxGenero.removeAllItems();
+        fp.cbxGenero.addItem("MASCULINO");
+        fp.cbxGenero.addItem("FEMENINO");
         fp.jdcFechaNacimiento.removeAll();
     }
 
@@ -26,7 +26,7 @@ public class ProcesosPaciente {
         fp.txtNombres.setText("");
         fp.txtTelefono.setText("");
         fp.jdcFechaNacimiento.setDate(null);
-        fp.cbxGénero.setSelectedIndex(0);
+        fp.cbxGenero.setSelectedIndex(0);
         fp.txtDni.requestFocus();
     }
     
@@ -37,7 +37,7 @@ public class ProcesosPaciente {
         pac.setTelf(fp.txtTelefono.getText());
         pac.setEdad(Integer.parseInt(fp.txtEdad.getText()));
         pac.setDireccion(fp.txtDireccion.getText());
-        pac.setGenero(fp.cbxGénero.getSelectedItem().toString());
+        pac.setGenero(fp.cbxGenero.getSelectedItem().toString());
         
         //verificacion de fecha Nac.
         if(fp.jdcFechaNacimiento.getDate() != null){
