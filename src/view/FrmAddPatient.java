@@ -23,22 +23,22 @@ public class FrmAddPatient extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        txtDni = new javax.swing.JTextField();
+        txtDnibuscado = new javax.swing.JTextField();
         txtNombres = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        txtTelefono = new javax.swing.JTextField();
+        txtDireccion = new javax.swing.JTextField();
         cbxGénero = new javax.swing.JComboBox<>();
-        btnAddPatient = new javax.swing.JButton();
-        txtTelefono1 = new javax.swing.JTextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        btnAddPatient1 = new javax.swing.JButton();
-        txtAge = new javax.swing.JTextField();
-        btnAddPatient2 = new javax.swing.JButton();
-        btnAddPatient3 = new javax.swing.JButton();
-        btnAddPatient4 = new javax.swing.JButton();
+        btnBuscardni = new javax.swing.JButton();
+        txtTelefono = new javax.swing.JTextField();
+        jdcFechaNacimiento = new com.toedter.calendar.JDateChooser();
+        btnModificar = new javax.swing.JButton();
+        txtEdad = new javax.swing.JTextField();
+        btnAgregar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        txtDni1 = new javax.swing.JTextField();
+        txtDni = new javax.swing.JTextField();
 
         setClosable(true);
         setMaximizable(true);
@@ -48,10 +48,10 @@ public class FrmAddPatient extends javax.swing.JInternalFrame {
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtDni.setBackground(new java.awt.Color(204, 255, 255));
-        txtDni.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
-        txtDni.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dni buscado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
-        jPanel1.add(txtDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, 240, -1));
+        txtDnibuscado.setBackground(new java.awt.Color(204, 255, 255));
+        txtDnibuscado.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        txtDnibuscado.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dni buscado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        jPanel1.add(txtDnibuscado, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, 240, -1));
 
         txtNombres.setBackground(new java.awt.Color(204, 255, 255));
         txtNombres.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
@@ -65,10 +65,10 @@ public class FrmAddPatient extends javax.swing.JInternalFrame {
         jLabel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Sección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 0, 14))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 235, 42));
 
-        txtTelefono.setBackground(new java.awt.Color(204, 255, 255));
-        txtTelefono.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
-        txtTelefono.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dirección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
-        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 240, -1));
+        txtDireccion.setBackground(new java.awt.Color(204, 255, 255));
+        txtDireccion.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        txtDireccion.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dirección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 240, -1));
 
         cbxGénero.setBackground(new java.awt.Color(204, 255, 255));
         cbxGénero.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
@@ -81,44 +81,44 @@ public class FrmAddPatient extends javax.swing.JInternalFrame {
         });
         jPanel1.add(cbxGénero, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 240, 40));
 
-        btnAddPatient.setBackground(new java.awt.Color(0, 153, 153));
-        btnAddPatient.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAddPatient.setText("BUSCAR");
-        jPanel1.add(btnAddPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 170, 40));
+        btnBuscardni.setBackground(new java.awt.Color(0, 153, 153));
+        btnBuscardni.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnBuscardni.setText("BUSCAR");
+        jPanel1.add(btnBuscardni, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 170, 40));
 
-        txtTelefono1.setBackground(new java.awt.Color(204, 255, 255));
-        txtTelefono1.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
-        txtTelefono1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Telefono", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
-        jPanel1.add(txtTelefono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 240, 40));
+        txtTelefono.setBackground(new java.awt.Color(204, 255, 255));
+        txtTelefono.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        txtTelefono.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Telefono", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 240, 40));
 
-        jDateChooser1.setBackground(new java.awt.Color(204, 255, 255));
-        jDateChooser1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Fecha Nacimiento", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
-        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 240, 50));
+        jdcFechaNacimiento.setBackground(new java.awt.Color(204, 255, 255));
+        jdcFechaNacimiento.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Fecha Nacimiento", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
+        jPanel1.add(jdcFechaNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 240, 50));
 
-        btnAddPatient1.setBackground(new java.awt.Color(0, 153, 153));
-        btnAddPatient1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAddPatient1.setText("MODIFICAR");
-        jPanel1.add(btnAddPatient1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, 150, 30));
+        btnModificar.setBackground(new java.awt.Color(0, 153, 153));
+        btnModificar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnModificar.setText("MODIFICAR");
+        jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, 150, 30));
 
-        txtAge.setBackground(new java.awt.Color(204, 255, 255));
-        txtAge.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        txtAge.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Edad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
-        jPanel1.add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 238, -1));
+        txtEdad.setBackground(new java.awt.Color(204, 255, 255));
+        txtEdad.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        txtEdad.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Edad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        jPanel1.add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 238, -1));
 
-        btnAddPatient2.setBackground(new java.awt.Color(0, 153, 153));
-        btnAddPatient2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAddPatient2.setText("AGREGAR");
-        jPanel1.add(btnAddPatient2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 150, 30));
+        btnAgregar.setBackground(new java.awt.Color(0, 153, 153));
+        btnAgregar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAgregar.setText("AGREGAR");
+        jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 150, 30));
 
-        btnAddPatient3.setBackground(new java.awt.Color(0, 153, 153));
-        btnAddPatient3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAddPatient3.setText("ELIMINAR");
-        jPanel1.add(btnAddPatient3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, 150, 30));
+        btnEliminar.setBackground(new java.awt.Color(0, 153, 153));
+        btnEliminar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnEliminar.setText("ELIMINAR");
+        jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, 150, 30));
 
-        btnAddPatient4.setBackground(new java.awt.Color(0, 153, 153));
-        btnAddPatient4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAddPatient4.setText("LIMPIAR");
-        jPanel1.add(btnAddPatient4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 150, 30));
+        btnLimpiar.setBackground(new java.awt.Color(0, 153, 153));
+        btnLimpiar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnLimpiar.setText("LIMPIAR");
+        jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 150, 30));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -135,10 +135,10 @@ public class FrmAddPatient extends javax.swing.JInternalFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 830, 500));
 
-        txtDni1.setBackground(new java.awt.Color(204, 255, 255));
-        txtDni1.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
-        txtDni1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dni", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
-        jPanel1.add(txtDni1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 240, 30));
+        txtDni.setBackground(new java.awt.Color(204, 255, 255));
+        txtDni.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        txtDni.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dni", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        jPanel1.add(txtDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 240, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 600));
 
@@ -151,22 +151,22 @@ public class FrmAddPatient extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnAddPatient;
-    public javax.swing.JButton btnAddPatient1;
-    public javax.swing.JButton btnAddPatient2;
-    public javax.swing.JButton btnAddPatient3;
-    public javax.swing.JButton btnAddPatient4;
+    public javax.swing.JButton btnAgregar;
+    public javax.swing.JButton btnBuscardni;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnModificar;
     public javax.swing.JComboBox<String> cbxGénero;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    public javax.swing.JTextField txtAge;
+    private com.toedter.calendar.JDateChooser jdcFechaNacimiento;
+    public javax.swing.JTextField txtDireccion;
     public javax.swing.JTextField txtDni;
-    public javax.swing.JTextField txtDni1;
+    public javax.swing.JTextField txtDnibuscado;
+    public javax.swing.JTextField txtEdad;
     public javax.swing.JTextField txtNombres;
     public javax.swing.JTextField txtTelefono;
-    public javax.swing.JTextField txtTelefono1;
     // End of variables declaration//GEN-END:variables
 }
