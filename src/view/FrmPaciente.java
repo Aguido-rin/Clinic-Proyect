@@ -37,7 +37,7 @@ public class FrmPaciente extends javax.swing.JInternalFrame {
         btnEliminar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblDatosPaciente = new javax.swing.JTable();
         txtDni = new javax.swing.JTextField();
 
         setClosable(true);
@@ -120,7 +120,7 @@ public class FrmPaciente extends javax.swing.JInternalFrame {
         btnLimpiar.setText("LIMPIAR");
         jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 150, 30));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblDatosPaciente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -131,7 +131,7 @@ public class FrmPaciente extends javax.swing.JInternalFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tblDatosPaciente);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 830, 500));
 
@@ -160,8 +160,8 @@ public class FrmPaciente extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private com.toedter.calendar.JDateChooser jdcFechaNacimiento;
+    public com.toedter.calendar.JDateChooser jdcFechaNacimiento;
+    public javax.swing.JTable tblDatosPaciente;
     public javax.swing.JTextField txtDireccion;
     public javax.swing.JTextField txtDni;
     public javax.swing.JTextField txtDnibuscado;
