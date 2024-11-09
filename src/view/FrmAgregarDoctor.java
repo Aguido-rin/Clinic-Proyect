@@ -4,12 +4,12 @@ package view;
  *
  * @author AguidoRin
  */
-public class FrmAddDoctor extends javax.swing.JInternalFrame {
+public class FrmAgregarDoctor extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FrmIntClínica
      */
-    public FrmAddDoctor() {
+    public FrmAgregarDoctor() {
         initComponents();
     }
 
