@@ -27,12 +27,17 @@ public class FrmAddDoctor extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         txtName = new javax.swing.JTextField();
         txtDni = new javax.swing.JTextField();
-        txtAge = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
-        btnAdd = new javax.swing.JButton();
         cbxEspec = new javax.swing.JComboBox<>();
+        txtTelefono1 = new javax.swing.JTextField();
+        btnAddPatient2 = new javax.swing.JButton();
+        btnAddPatient1 = new javax.swing.JButton();
+        btnAddPatient3 = new javax.swing.JButton();
+        btnAddPatient4 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblDatosMedicos = new javax.swing.JTable();
+        jTable1 = new javax.swing.JTable();
+        btnAddPatient = new javax.swing.JButton();
+        txtDni1 = new javax.swing.JTextField();
 
         setClosable(true);
         setMaximizable(true);
@@ -40,6 +45,7 @@ public class FrmAddDoctor extends javax.swing.JInternalFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtCode.setBackground(new java.awt.Color(204, 255, 255));
         txtCode.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -49,12 +55,14 @@ public class FrmAddDoctor extends javax.swing.JInternalFrame {
                 txtCodeActionPerformed(evt);
             }
         });
+        jPanel1.add(txtCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 238, 40));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Médicos");
+        jLabel1.setText("Medicos");
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jLabel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Sección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 0, 12))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 238, 42));
 
         txtName.setBackground(new java.awt.Color(204, 255, 255));
         txtName.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -64,100 +72,75 @@ public class FrmAddDoctor extends javax.swing.JInternalFrame {
                 txtNameActionPerformed(evt);
             }
         });
+        jPanel1.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 238, -1));
 
         txtDni.setBackground(new java.awt.Color(204, 255, 255));
         txtDni.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         txtDni.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dni", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
-
-        txtAge.setBackground(new java.awt.Color(204, 255, 255));
-        txtAge.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        txtAge.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Edad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        jPanel1.add(txtDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 238, 40));
 
         txtTelefono.setBackground(new java.awt.Color(204, 255, 255));
         txtTelefono.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         txtTelefono.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Telefono", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
-
-        btnAdd.setBackground(new java.awt.Color(0, 153, 153));
-        btnAdd.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAdd.setText("AGREGAR MÉDICO");
+        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 238, 40));
 
         cbxEspec.setBackground(new java.awt.Color(204, 255, 255));
         cbxEspec.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         cbxEspec.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Especialidad 1", "Especialidad 2" }));
         cbxEspec.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Especialidad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        jPanel1.add(cbxEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 238, 40));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cbxEspec, javax.swing.GroupLayout.Alignment.LEADING, 0, 238, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtCode)
-                    .addComponent(txtName)
-                    .addComponent(txtDni)
-                    .addComponent(txtAge, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtTelefono, javax.swing.GroupLayout.Alignment.LEADING))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtCode, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtDni, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cbxEspec, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
-                .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
-        );
+        txtTelefono1.setBackground(new java.awt.Color(204, 255, 255));
+        txtTelefono1.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        txtTelefono1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dirección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        jPanel1.add(txtTelefono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 240, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 470));
+        btnAddPatient2.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient2.setText("AGREGAR");
+        jPanel1.add(btnAddPatient2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, 150, 30));
 
-        tblDatosMedicos.setBackground(new java.awt.Color(204, 255, 255));
-        tblDatosMedicos.setModel(new javax.swing.table.DefaultTableModel(
+        btnAddPatient1.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient1.setText("MODIFICAR");
+        jPanel1.add(btnAddPatient1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 150, 30));
+
+        btnAddPatient3.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient3.setText("ELIMINAR");
+        jPanel1.add(btnAddPatient3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, 150, 30));
+
+        btnAddPatient4.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient4.setText("LIMPIAR");
+        jPanel1.add(btnAddPatient4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, 150, 30));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Código", "Nombre", "DNI", "Edad", "Telefono", "Especialidad"
+                "Title 1", "Title 2", "Title 3", "Title 4"
             }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
-            };
+        ));
+        jScrollPane1.setViewportView(jTable1);
 
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 830, 500));
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tblDatosMedicos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jScrollPane1.setViewportView(tblDatosMedicos);
+        btnAddPatient.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient.setText("BUSCAR");
+        jPanel1.add(btnAddPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 170, 30));
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 640, 470));
+        txtDni1.setBackground(new java.awt.Color(204, 255, 255));
+        txtDni1.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        txtDni1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dni buscado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        jPanel1.add(txtDni1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, 240, 30));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -172,16 +155,21 @@ public class FrmAddDoctor extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnAdd;
+    public javax.swing.JButton btnAddPatient;
+    public javax.swing.JButton btnAddPatient1;
+    public javax.swing.JButton btnAddPatient2;
+    public javax.swing.JButton btnAddPatient3;
+    public javax.swing.JButton btnAddPatient4;
     public javax.swing.JComboBox<String> cbxEspec;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tblDatosMedicos;
-    public javax.swing.JTextField txtAge;
+    private javax.swing.JTable jTable1;
     public javax.swing.JTextField txtCode;
-    public javax.swing.JTextField txtDni;
+    private javax.swing.JTextField txtDni;
+    public javax.swing.JTextField txtDni1;
     public javax.swing.JTextField txtName;
     public javax.swing.JTextField txtTelefono;
+    public javax.swing.JTextField txtTelefono1;
     // End of variables declaration//GEN-END:variables
 }

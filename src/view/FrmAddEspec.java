@@ -26,11 +26,14 @@ public class FrmAddEspec extends javax.swing.JInternalFrame {
         txtCodeDoctor = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         txtNameEspec = new javax.swing.JTextField();
-        btnAdd = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        txtDescEspec = new javax.swing.JTextPane();
+        btnAddPatient = new javax.swing.JButton();
+        txtDni = new javax.swing.JTextField();
+        btnAddPatient2 = new javax.swing.JButton();
+        btnAddPatient1 = new javax.swing.JButton();
+        btnAddPatient3 = new javax.swing.JButton();
+        btnAddPatient4 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblDatosMedicos = new javax.swing.JTable();
+        jTable1 = new javax.swing.JTable();
 
         setClosable(true);
         setMaximizable(true);
@@ -38,6 +41,7 @@ public class FrmAddEspec extends javax.swing.JInternalFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtCodeDoctor.setBackground(new java.awt.Color(204, 255, 255));
         txtCodeDoctor.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -47,12 +51,14 @@ public class FrmAddEspec extends javax.swing.JInternalFrame {
                 txtCodeDoctorActionPerformed(evt);
             }
         });
+        jPanel1.add(txtCodeDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 238, 40));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Especialidad");
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jLabel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Sección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 0, 12))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 238, 42));
 
         txtNameEspec.setBackground(new java.awt.Color(204, 255, 255));
         txtNameEspec.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -62,78 +68,54 @@ public class FrmAddEspec extends javax.swing.JInternalFrame {
                 txtNameEspecActionPerformed(evt);
             }
         });
+        jPanel1.add(txtNameEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 238, 40));
 
-        btnAdd.setBackground(new java.awt.Color(0, 153, 153));
-        btnAdd.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAdd.setText("AGREGAR ESPECIALIDAD");
+        btnAddPatient.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient.setText("BUSCAR");
+        jPanel1.add(btnAddPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 20, 170, 30));
 
-        txtDescEspec.setBackground(new java.awt.Color(204, 255, 255));
-        txtDescEspec.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Descripción", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
-        jScrollPane2.setViewportView(txtDescEspec);
+        txtDni.setBackground(new java.awt.Color(204, 255, 255));
+        txtDni.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        txtDni.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Código buscado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        jPanel1.add(txtDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 240, 30));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane2)
-                    .addComponent(btnAdd, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtCodeDoctor)
-                    .addComponent(txtNameEspec))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtCodeDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtNameEspec, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
-                .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
-        );
+        btnAddPatient2.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient2.setText("AGREGAR");
+        jPanel1.add(btnAddPatient2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 150, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 470));
+        btnAddPatient1.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient1.setText("MODIFICAR");
+        jPanel1.add(btnAddPatient1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 150, 30));
 
-        tblDatosMedicos.setBackground(new java.awt.Color(204, 255, 255));
-        tblDatosMedicos.setModel(new javax.swing.table.DefaultTableModel(
+        btnAddPatient3.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient3.setText("ELIMINAR");
+        jPanel1.add(btnAddPatient3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 150, 30));
+
+        btnAddPatient4.setBackground(new java.awt.Color(0, 153, 153));
+        btnAddPatient4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAddPatient4.setText("LIMPIAR");
+        jPanel1.add(btnAddPatient4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 150, 30));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Código De Especialidad", "Tipo De Especialidad", "Descripción"
+                "Title 1", "Title 2", "Title 3", "Title 4"
             }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Object.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, true
-            };
+        ));
+        jScrollPane1.setViewportView(jTable1);
 
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 750, 500));
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tblDatosMedicos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jScrollPane1.setViewportView(tblDatosMedicos);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 640, 470));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 610));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -148,14 +130,17 @@ public class FrmAddEspec extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnAdd;
+    public javax.swing.JButton btnAddPatient;
+    public javax.swing.JButton btnAddPatient1;
+    public javax.swing.JButton btnAddPatient2;
+    public javax.swing.JButton btnAddPatient3;
+    public javax.swing.JButton btnAddPatient4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable tblDatosMedicos;
+    private javax.swing.JTable jTable1;
     public javax.swing.JTextField txtCodeDoctor;
-    public javax.swing.JTextPane txtDescEspec;
+    public javax.swing.JTextField txtDni;
     public javax.swing.JTextField txtNameEspec;
     // End of variables declaration//GEN-END:variables
 }
