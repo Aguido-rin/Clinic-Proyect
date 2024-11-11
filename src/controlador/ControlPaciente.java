@@ -1,5 +1,6 @@
 package controlador;
 
+
 import estructuras.paciente.ListacPaciente;
 import estructuras.paciente.Nodo;
 import java.awt.event.ActionEvent;
@@ -73,4 +74,5 @@ public class ControlPaciente implements ActionListener {
             }
         }
     }
+
 }

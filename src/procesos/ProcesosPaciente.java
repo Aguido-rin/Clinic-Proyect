@@ -1,3 +1,4 @@
+
 package procesos;
 
 import estructuras.paciente.ListacPaciente;
@@ -65,5 +66,5 @@ public class ProcesosPaciente {
         }
 
     }
-
 }
+

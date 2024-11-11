@@ -1,3 +1,4 @@
+
 package persistencia;
 
 import estructuras.paciente.ListacPaciente;
@@ -32,3 +33,4 @@ public class AlmacenarPaciente {
         return Lista;
     }
 }
+

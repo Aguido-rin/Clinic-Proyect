@@ -23,6 +23,7 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+<<<<<<< HEAD
         txtCodeDoctor = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         txtNameEspec = new javax.swing.JTextField();
@@ -34,6 +35,19 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
         btnAddPatient4 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+=======
+        txtCodEspec = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        txtTipoEspec = new javax.swing.JTextField();
+        btnBuscar = new javax.swing.JButton();
+        txtBuscado = new javax.swing.JTextField();
+        btnAgregarEspec = new javax.swing.JButton();
+        btnModificarEspec = new javax.swing.JButton();
+        btnEliminarEspec = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblEspec = new javax.swing.JTable();
+>>>>>>> BranchAguido
 
         setClosable(true);
         setMaximizable(true);
@@ -43,6 +57,7 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+<<<<<<< HEAD
         txtCodeDoctor.setBackground(new java.awt.Color(204, 255, 255));
         txtCodeDoctor.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         txtCodeDoctor.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Código de Especialidad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
@@ -52,6 +67,17 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(txtCodeDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 238, 40));
+=======
+        txtCodEspec.setBackground(new java.awt.Color(204, 255, 255));
+        txtCodEspec.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        txtCodEspec.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Código de Especialidad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        txtCodEspec.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCodEspecActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtCodEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 238, 40));
+>>>>>>> BranchAguido
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -60,6 +86,7 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
         jLabel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Sección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 0, 12))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 238, 42));
 
+<<<<<<< HEAD
         txtNameEspec.setBackground(new java.awt.Color(204, 255, 255));
         txtNameEspec.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         txtNameEspec.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Tipo de Especialidad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
@@ -101,6 +128,49 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
         jPanel1.add(btnAddPatient4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 150, 30));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
+=======
+        txtTipoEspec.setBackground(new java.awt.Color(204, 255, 255));
+        txtTipoEspec.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        txtTipoEspec.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Tipo de Especialidad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        txtTipoEspec.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTipoEspecActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtTipoEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 238, 40));
+
+        btnBuscar.setBackground(new java.awt.Color(0, 153, 153));
+        btnBuscar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnBuscar.setText("BUSCAR");
+        jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 20, 170, 30));
+
+        txtBuscado.setBackground(new java.awt.Color(204, 255, 255));
+        txtBuscado.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
+        txtBuscado.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Código buscado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        jPanel1.add(txtBuscado, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 240, 30));
+
+        btnAgregarEspec.setBackground(new java.awt.Color(0, 153, 153));
+        btnAgregarEspec.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnAgregarEspec.setText("AGREGAR");
+        jPanel1.add(btnAgregarEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 150, 30));
+
+        btnModificarEspec.setBackground(new java.awt.Color(0, 153, 153));
+        btnModificarEspec.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnModificarEspec.setText("MODIFICAR");
+        jPanel1.add(btnModificarEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 150, 30));
+
+        btnEliminarEspec.setBackground(new java.awt.Color(0, 153, 153));
+        btnEliminarEspec.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnEliminarEspec.setText("ELIMINAR");
+        jPanel1.add(btnEliminarEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 150, 30));
+
+        btnLimpiar.setBackground(new java.awt.Color(0, 153, 153));
+        btnLimpiar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnLimpiar.setText("LIMPIAR");
+        jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 150, 30));
+
+        tblEspec.setModel(new javax.swing.table.DefaultTableModel(
+>>>>>>> BranchAguido
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -111,7 +181,11 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+<<<<<<< HEAD
         jScrollPane1.setViewportView(jTable1);
+=======
+        jScrollPane1.setViewportView(tblEspec);
+>>>>>>> BranchAguido
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 750, 500));
 
@@ -120,6 +194,7 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
     private void txtNameEspecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameEspecActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNameEspecActionPerformed
@@ -144,3 +219,29 @@ public class FrmAgregarEspecialidad extends javax.swing.JInternalFrame {
     public javax.swing.JTextField txtNameEspec;
     // End of variables declaration//GEN-END:variables
 }
+=======
+    private void txtTipoEspecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTipoEspecActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTipoEspecActionPerformed
+
+    private void txtCodEspecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodEspecActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCodEspecActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnAgregarEspec;
+    public javax.swing.JButton btnBuscar;
+    public javax.swing.JButton btnEliminarEspec;
+    public javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnModificarEspec;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JTable tblEspec;
+    public javax.swing.JTextField txtBuscado;
+    public javax.swing.JTextField txtCodEspec;
+    public javax.swing.JTextField txtTipoEspec;
+    // End of variables declaration//GEN-END:variables
+}
+>>>>>>> BranchAguido
