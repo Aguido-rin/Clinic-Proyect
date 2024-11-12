@@ -14,7 +14,6 @@ public class ProcesosDoctor {
         fe.setTitle("Registro de doctores");
         fe.setVisible(true);
         fe.cbxEspec.removeAllItems();
-          
     }
 
     public static void LimpiarEntradas(FrmDoctor fe) {
@@ -46,7 +45,7 @@ public class ProcesosDoctor {
         e.setNombres(fe.txtName.getText());
         e.setTelefono(fe.txtTelefono.getText());
         e.setDireccion(fe.txtTelefono1.getText());
-       // e.setEspecialidad(fe.cbxEspec.getSelectedObjects().toString());
+       //e.setEspecialidad(fe.cbxEspec.getSelectedObjects().toString());
         return e;
     }//fin leer
 }
