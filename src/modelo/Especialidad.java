@@ -35,4 +35,11 @@ public class Especialidad {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    @Override
+    public String toString() {
+        return "Especialidad{" + "id=" + id + ", tipo=" + tipo + '}';
+    }
+    
+    
 }

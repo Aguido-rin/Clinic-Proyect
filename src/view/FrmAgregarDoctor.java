@@ -164,9 +164,9 @@ public class FrmAgregarDoctor extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    public javax.swing.JTable jTable1;
     public javax.swing.JTextField txtCode;
-    private javax.swing.JTextField txtDni;
+    public javax.swing.JTextField txtDni;
     public javax.swing.JTextField txtDni1;
     public javax.swing.JTextField txtName;
     public javax.swing.JTextField txtTelefono;

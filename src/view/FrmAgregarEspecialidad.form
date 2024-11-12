@@ -42,11 +42,7 @@
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-<<<<<<< HEAD
-        <Component class="javax.swing.JTextField" name="txtCodeDoctor">
-=======
         <Component class="javax.swing.JTextField" name="txtCodEspec">
->>>>>>> BranchAguido
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -63,11 +59,7 @@
             </Property>
           </Properties>
           <Events>
-<<<<<<< HEAD
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCodeDoctorActionPerformed"/>
-=======
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCodEspecActionPerformed"/>
->>>>>>> BranchAguido
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -103,11 +95,7 @@
             </Constraint>
           </Constraints>
         </Component>
-<<<<<<< HEAD
-        <Component class="javax.swing.JTextField" name="txtNameEspec">
-=======
         <Component class="javax.swing.JTextField" name="txtTipoEspec">
->>>>>>> BranchAguido
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -124,11 +112,7 @@
             </Property>
           </Properties>
           <Events>
-<<<<<<< HEAD
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNameEspecActionPerformed"/>
-=======
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTipoEspecActionPerformed"/>
->>>>>>> BranchAguido
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -139,11 +123,7 @@
             </Constraint>
           </Constraints>
         </Component>
-<<<<<<< HEAD
-        <Component class="javax.swing.JButton" name="btnAddPatient">
-=======
         <Component class="javax.swing.JButton" name="btnBuscar">
->>>>>>> BranchAguido
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="99" red="0" type="rgb"/>
@@ -162,11 +142,7 @@
             </Constraint>
           </Constraints>
         </Component>
-<<<<<<< HEAD
-        <Component class="javax.swing.JTextField" name="txtDni">
-=======
         <Component class="javax.swing.JTextField" name="txtBuscado">
->>>>>>> BranchAguido
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -191,11 +167,7 @@
             </Constraint>
           </Constraints>
         </Component>
-<<<<<<< HEAD
-        <Component class="javax.swing.JButton" name="btnAddPatient2">
-=======
         <Component class="javax.swing.JButton" name="btnAgregarEspec">
->>>>>>> BranchAguido
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="99" red="0" type="rgb"/>
@@ -210,19 +182,11 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< HEAD
-              <AbsoluteConstraints x="50" y="290" width="150" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnAddPatient1">
-=======
               <AbsoluteConstraints x="50" y="320" width="150" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="btnModificarEspec">
->>>>>>> BranchAguido
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="99" red="0" type="rgb"/>
@@ -237,19 +201,11 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< HEAD
-              <AbsoluteConstraints x="50" y="330" width="150" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnAddPatient3">
-=======
               <AbsoluteConstraints x="50" y="360" width="150" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="btnEliminarEspec">
->>>>>>> BranchAguido
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="99" red="0" type="rgb"/>
@@ -264,19 +220,11 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< HEAD
-              <AbsoluteConstraints x="50" y="370" width="150" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnAddPatient4">
-=======
               <AbsoluteConstraints x="50" y="400" width="150" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="btnLimpiar">
->>>>>>> BranchAguido
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="99" red="0" type="rgb"/>
@@ -291,11 +239,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< HEAD
-              <AbsoluteConstraints x="50" y="410" width="150" height="30"/>
-=======
               <AbsoluteConstraints x="50" y="440" width="150" height="30"/>
->>>>>>> BranchAguido
             </Constraint>
           </Constraints>
         </Component>
@@ -311,11 +255,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-<<<<<<< HEAD
-            <Component class="javax.swing.JTable" name="jTable1">
-=======
             <Component class="javax.swing.JTable" name="tblEspec">
->>>>>>> BranchAguido
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="4">
@@ -326,12 +266,9 @@
                   </Table>
                 </Property>
               </Properties>
-<<<<<<< HEAD
-=======
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
               </AuxValues>
->>>>>>> BranchAguido
             </Component>
           </SubComponents>
         </Container>

@@ -10,7 +10,7 @@ public class Doctor implements Serializable {
     private String nombres;
     private String telefono;
     private String direccion;
-    private String especialidad;
+    private Especialidad especialidad;
 
     public Doctor() {
     }
@@ -60,13 +60,14 @@ public class Doctor implements Serializable {
         this.direccion = direccion;
     }
 
-    public String getEspecialidad() {
-        return especialidad;
+    public Especialidad getEspecialidad() {
+        return this.especialidad;
     }
 
-    public void setEspecialidad(String especialidad) {
+    public void setEspecialidad(Especialidad especialidad) {
         this.especialidad = especialidad;
     }
+
     
     
     

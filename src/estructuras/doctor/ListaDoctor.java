@@ -2,7 +2,6 @@
 package estructuras.doctor;
 
 import java.io.Serializable;
-import javax.swing.JTextArea;
 import modelo.Doctor;
 
 
@@ -53,10 +52,10 @@ public class ListaDoctor implements Serializable{
     }
     
     //Metodo que busca un estudiante por medio de su DNI
-    public Nodo BuscarPorCodigo(String codbuscado){
+    public Nodo BuscarPorDni(String dnibuscado){
         Nodo aux=ini;
         while(aux!=null){
-            if(codbuscado.equals(aux.doc.getCodigo())){
+            if(dnibuscado.equals(aux.doc.getDni())){
                 return aux;
             }
             aux= aux.sig;
