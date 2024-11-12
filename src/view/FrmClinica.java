@@ -22,128 +22,162 @@ public class FrmClinica extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane2 = new javax.swing.JDesktopPane();
-        jPanel1 = new javax.swing.JPanel();
-        mbOptions = new javax.swing.JMenuBar();
+        jDpFondo = new javax.swing.JDesktopPane();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jmPacientes = new javax.swing.JMenu();
+        jMenuItem_Pacientes = new javax.swing.JMenuItem();
+        jMenuItem_BuscarPaciente = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        mitPatient = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
-        mitDoctor = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        mnEspe = new javax.swing.JMenu();
-        mitEspe = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem_Doctores = new javax.swing.JMenuItem();
+        jMenuItem_AtencionesMedico = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem_Especialidad = new javax.swing.JMenuItem();
+        jMenuItem_BuscarEspecialidad = new javax.swing.JMenuItem();
+        jMenuItem_Atenciones = new javax.swing.JMenu();
+        jMenuItem_Atencion = new javax.swing.JMenuItem();
+        jMenuItem_BuscarAtenciones = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem_HistoriaClinica = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
+        jMenuItem_Reportes = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        jMenuItem_salir = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1000, 700));
 
-        jDesktopPane2.setBackground(new java.awt.Color(153, 153, 255));
-        jDesktopPane2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jmPacientes.setForeground(new java.awt.Color(0, 0, 0));
+        jmPacientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/paciente.png"))); // NOI18N
+        jmPacientes.setText("Pacientes");
+        jmPacientes.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jmPacientes.setPreferredSize(new java.awt.Dimension(150, 50));
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jMenuItem_Pacientes.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_Pacientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gestion-pacientes.png"))); // NOI18N
+        jMenuItem_Pacientes.setText("Gestionar Pacientes");
+        jMenuItem_Pacientes.setPreferredSize(new java.awt.Dimension(180, 30));
+        jmPacientes.add(jMenuItem_Pacientes);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
-        );
+        jMenuItem_BuscarPaciente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_BuscarPaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gestion-pacientes.png"))); // NOI18N
+        jMenuItem_BuscarPaciente.setText("Buscar Pacientes");
+        jMenuItem_BuscarPaciente.setPreferredSize(new java.awt.Dimension(180, 30));
+        jmPacientes.add(jMenuItem_BuscarPaciente);
 
-        jDesktopPane2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 680));
+        jMenuBar1.add(jmPacientes);
 
-        mbOptions.setBorder(null);
-        mbOptions.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu2.setForeground(new java.awt.Color(0, 0, 0));
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/doctor.png"))); // NOI18N
+        jMenu2.setText("Doctores");
+        jMenu2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jMenu2.setPreferredSize(new java.awt.Dimension(150, 50));
 
-        jMenu2.setText("Pacientes");
+        jMenuItem_Doctores.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_Doctores.setText("Gestionar Doctores");
+        jMenuItem_Doctores.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenu2.add(jMenuItem_Doctores);
 
-        mitPatient.setText("Agregar Paciente");
-        mitPatient.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mitPatientActionPerformed(evt);
-            }
-        });
-        jMenu2.add(mitPatient);
+        jMenuItem_AtencionesMedico.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_AtencionesMedico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gestion-pacientes.png"))); // NOI18N
+        jMenuItem_AtencionesMedico.setText("Atenciones de Medico");
+        jMenuItem_AtencionesMedico.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenu2.add(jMenuItem_AtencionesMedico);
 
-        jMenuItem1.setText("Buscar Paciente");
-        jMenu2.add(jMenuItem1);
+        jMenuBar1.add(jMenu2);
 
-        mbOptions.add(jMenu2);
+        jMenu3.setForeground(new java.awt.Color(0, 0, 0));
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/especialidades.png"))); // NOI18N
+        jMenu3.setText("Especialidades");
+        jMenu3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jMenu3.setPreferredSize(new java.awt.Dimension(150, 50));
 
-        jMenu1.setText("Doctores");
+        jMenuItem_Especialidad.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_Especialidad.setText("Gestionar Especialidades");
+        jMenuItem_Especialidad.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenu3.add(jMenuItem_Especialidad);
 
-        mitDoctor.setText("Agregar Médico");
-        mitDoctor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mitDoctorActionPerformed(evt);
-            }
-        });
-        jMenu1.add(mitDoctor);
+        jMenuItem_BuscarEspecialidad.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_BuscarEspecialidad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gestion-pacientes.png"))); // NOI18N
+        jMenuItem_BuscarEspecialidad.setText("Buscar Especialidades");
+        jMenuItem_BuscarEspecialidad.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenu3.add(jMenuItem_BuscarEspecialidad);
 
-        jMenuItem2.setText("Atenciones De Médico");
-        jMenu1.add(jMenuItem2);
+        jMenuBar1.add(jMenu3);
 
-        mbOptions.add(jMenu1);
+        jMenuItem_Atenciones.setForeground(new java.awt.Color(0, 0, 0));
+        jMenuItem_Atenciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/atencion-medica.png"))); // NOI18N
+        jMenuItem_Atenciones.setText("Atenciones");
+        jMenuItem_Atenciones.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jMenuItem_Atenciones.setPreferredSize(new java.awt.Dimension(150, 50));
 
-        mnEspe.setText("Especialidades");
+        jMenuItem_Atencion.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_Atencion.setText("Gestionar Atenciones");
+        jMenuItem_Atencion.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenuItem_Atenciones.add(jMenuItem_Atencion);
 
-        mitEspe.setText("Agregar Especialidades");
-        mnEspe.add(mitEspe);
+        jMenuItem_BuscarAtenciones.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_BuscarAtenciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gestion-pacientes.png"))); // NOI18N
+        jMenuItem_BuscarAtenciones.setText("Buscar Atenciones");
+        jMenuItem_BuscarAtenciones.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenuItem_Atenciones.add(jMenuItem_BuscarAtenciones);
 
-        jMenuItem5.setText("Buscar Especialidad");
-        mnEspe.add(jMenuItem5);
+        jMenuBar1.add(jMenuItem_Atenciones);
 
-        mbOptions.add(mnEspe);
+        jMenu6.setForeground(new java.awt.Color(0, 0, 0));
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/historia-clinica.png"))); // NOI18N
+        jMenu6.setText("HistoriaClinica");
+        jMenu6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jMenu6.setPreferredSize(new java.awt.Dimension(150, 50));
 
-        jMenu3.setText("Atenciones");
+        jMenuItem_HistoriaClinica.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_HistoriaClinica.setText("Gestionar Historia Clinica");
+        jMenuItem_HistoriaClinica.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenu6.add(jMenuItem_HistoriaClinica);
 
-        jMenuItem3.setText("Agregar Atención");
-        jMenu3.add(jMenuItem3);
+        jMenuBar1.add(jMenu6);
 
-        jMenuItem4.setText("Buscar Atención");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem4);
+        jMenu7.setForeground(new java.awt.Color(0, 0, 0));
+        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reportes.png"))); // NOI18N
+        jMenu7.setText("Reportes");
+        jMenu7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jMenu7.setPreferredSize(new java.awt.Dimension(150, 50));
 
-        mbOptions.add(jMenu3);
+        jMenuItem_Reportes.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_Reportes.setText("Gestionar Reportes");
+        jMenuItem_Reportes.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenu7.add(jMenuItem_Reportes);
 
-        setJMenuBar(mbOptions);
+        jMenuBar1.add(jMenu7);
+
+        jMenu9.setBackground(java.awt.SystemColor.control);
+        jMenu9.setForeground(new java.awt.Color(0, 0, 0));
+        jMenu9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/salida.png"))); // NOI18N
+        jMenu9.setText("Salir");
+        jMenu9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jMenu9.setPreferredSize(new java.awt.Dimension(150, 50));
+
+        jMenuItem_salir.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jMenuItem_salir.setText("Cerrar Sesion");
+        jMenuItem_salir.setPreferredSize(new java.awt.Dimension(180, 30));
+        jMenu9.add(jMenuItem_salir);
+
+        jMenuBar1.add(jMenu9);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane2)
+            .addComponent(jDpFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 1194, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 677, Short.MAX_VALUE)
+            .addComponent(jDpFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void mitPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitPatientActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mitPatientActionPerformed
-
-    private void mitDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitDoctorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mitDoctorActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,20 +216,25 @@ public class FrmClinica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDesktopPane jDesktopPane2;
-    private javax.swing.JMenu jMenu1;
+    public javax.swing.JDesktopPane jDpFondo;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JPanel jPanel1;
-    public javax.swing.JMenuBar mbOptions;
-    public javax.swing.JMenuItem mitDoctor;
-    public javax.swing.JMenuItem mitEspe;
-    public javax.swing.JMenuItem mitPatient;
-    private javax.swing.JMenu mnEspe;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu9;
+    private javax.swing.JMenuBar jMenuBar1;
+    public javax.swing.JMenuItem jMenuItem_Atencion;
+    private javax.swing.JMenu jMenuItem_Atenciones;
+    public javax.swing.JMenuItem jMenuItem_AtencionesMedico;
+    public javax.swing.JMenuItem jMenuItem_BuscarAtenciones;
+    public javax.swing.JMenuItem jMenuItem_BuscarEspecialidad;
+    public javax.swing.JMenuItem jMenuItem_BuscarPaciente;
+    public javax.swing.JMenuItem jMenuItem_Doctores;
+    public javax.swing.JMenuItem jMenuItem_Especialidad;
+    public javax.swing.JMenuItem jMenuItem_HistoriaClinica;
+    public javax.swing.JMenuItem jMenuItem_Pacientes;
+    public javax.swing.JMenuItem jMenuItem_Reportes;
+    public javax.swing.JMenuItem jMenuItem_salir;
+    private javax.swing.JMenu jmPacientes;
     // End of variables declaration//GEN-END:variables
 }
