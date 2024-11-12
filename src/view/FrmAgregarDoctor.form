@@ -182,9 +182,17 @@
               <Font name="Verdana" size="12" style="1"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="2">
-                <StringItem index="0" value="Especialidad 1"/>
-                <StringItem index="1" value="Especialidad 2"/>
+              <StringArray count="10">
+                <StringItem index="0" value="Cardiolog&#xed;a"/>
+                <StringItem index="1" value="Pediatr&#xed;a"/>
+                <StringItem index="2" value="Ginecolog&#xed;a"/>
+                <StringItem index="3" value="Dermatolog&#xed;a"/>
+                <StringItem index="4" value="Traumatolog&#xed;a"/>
+                <StringItem index="5" value="Neurolog&#xed;a"/>
+                <StringItem index="6" value="Oftalmolog&#xed;a"/>
+                <StringItem index="7" value="Psiquiatr&#xed;a"/>
+                <StringItem index="8" value="Endocrinolog&#xed;a"/>
+                <StringItem index="9" value="Gastroenterolog&#xed;a"/>
               </StringArray>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">

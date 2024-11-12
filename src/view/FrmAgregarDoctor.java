@@ -86,7 +86,7 @@ public class FrmAgregarDoctor extends javax.swing.JInternalFrame {
 
         cbxEspec.setBackground(new java.awt.Color(204, 255, 255));
         cbxEspec.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        cbxEspec.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Especialidad 1", "Especialidad 2" }));
+        cbxEspec.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cardiología", "Pediatría", "Ginecología", "Dermatología", "Traumatología", "Neurología", "Oftalmología", "Psiquiatría", "Endocrinología", "Gastroenterología" }));
         cbxEspec.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Especialidad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
         jPanel1.add(cbxEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 238, 40));
 
