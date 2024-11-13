@@ -5,8 +5,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import procesos.ImagenFondo;
+import view.FrmAgregarDoctor;
 import view.FrmAgregarEspecialidad;
-import view.FrmAgregarPaciente;
 import view.FrmAtencion;
 import view.FrmClinica;
 import view.FrmDoctor;
@@ -51,18 +51,15 @@ public class ControladorClinica implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == vista.jMenuItem_Pacientes) {
-            FrmAgregarPaciente fp = new FrmAgregarPaciente();
-            MostrarFrame(fp);
-            //ControlPaciente ce = new ControlPaciente();
-        }
-        if (e.getSource() ==vista.jMenuItem_BuscarPaciente) {
             FrmPaciente fp = new FrmPaciente();
             MostrarFrame(fp);
-            ControlPaciente ce = new ControlPaciente(fp);
+            ControlPaciente ce = new ControlPaciente(fp);  
         }
+
         if (e.getSource() == vista.jMenuItem_Doctores) {
-            FrmDoctor fd = new FrmDoctor();
+            FrmAgregarDoctor fd=new FrmAgregarDoctor();
             MostrarFrame(fd);
+            ControlMedico cm=new ControlMedico(fd);
         }
         if (e.getSource() == vista.jMenuItem_Especialidad) {
             FrmAgregarEspecialidad fe = new FrmAgregarEspecialidad();

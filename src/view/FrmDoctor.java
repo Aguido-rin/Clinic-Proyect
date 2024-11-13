@@ -36,7 +36,7 @@ public class FrmDoctor extends javax.swing.JInternalFrame {
         btnAddPatient4 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        btnAddPatient = new javax.swing.JButton();
+        btn_buscar = new javax.swing.JButton();
         txtDni1 = new javax.swing.JTextField();
 
         setClosable(true);
@@ -49,7 +49,7 @@ public class FrmDoctor extends javax.swing.JInternalFrame {
 
         txtCode.setBackground(new java.awt.Color(204, 255, 255));
         txtCode.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        txtCode.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Código", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        txtCode.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Código", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
         txtCode.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCodeActionPerformed(evt);
@@ -66,7 +66,7 @@ public class FrmDoctor extends javax.swing.JInternalFrame {
 
         txtName.setBackground(new java.awt.Color(204, 255, 255));
         txtName.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        txtName.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nombres", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        txtName.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Nombres", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
         txtName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNameActionPerformed(evt);
@@ -76,23 +76,23 @@ public class FrmDoctor extends javax.swing.JInternalFrame {
 
         txtDni.setBackground(new java.awt.Color(204, 255, 255));
         txtDni.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        txtDni.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dni", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        txtDni.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Dni", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
         jPanel1.add(txtDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 238, 40));
 
         txtTelefono.setBackground(new java.awt.Color(204, 255, 255));
         txtTelefono.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        txtTelefono.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Telefono", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        txtTelefono.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Telefono", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
         jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 238, 40));
 
         cbxEspec.setBackground(new java.awt.Color(204, 255, 255));
         cbxEspec.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        cbxEspec.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Especialidad 1", "Especialidad 2" }));
-        cbxEspec.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Especialidad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
-        jPanel1.add(cbxEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 238, 40));
+        cbxEspec.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Cardiología", "Pediatría", "Ginecología", "Dermatología", "Traumatología", "Neurología", "Psiquiatría", "Oftalmología", "Endocrinología", "Gastroenterología" }));
+        cbxEspec.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Especialidad", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Verdana", 1, 12))); // NOI18N
+        jPanel1.add(cbxEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 238, 50));
 
         txtTelefono1.setBackground(new java.awt.Color(204, 255, 255));
         txtTelefono1.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
-        txtTelefono1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dirección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        txtTelefono1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Dirección", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
         jPanel1.add(txtTelefono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 240, -1));
 
         btnAddPatient2.setBackground(new java.awt.Color(0, 153, 153));
@@ -130,14 +130,14 @@ public class FrmDoctor extends javax.swing.JInternalFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 830, 500));
 
-        btnAddPatient.setBackground(new java.awt.Color(0, 153, 153));
-        btnAddPatient.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAddPatient.setText("BUSCAR");
-        jPanel1.add(btnAddPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 170, 30));
+        btn_buscar.setBackground(new java.awt.Color(0, 153, 153));
+        btn_buscar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btn_buscar.setText("BUSCAR");
+        jPanel1.add(btn_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 170, 30));
 
         txtDni1.setBackground(new java.awt.Color(204, 255, 255));
         txtDni1.setFont(new java.awt.Font("Book Antiqua", 1, 12)); // NOI18N
-        txtDni1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dni buscado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
+        txtDni1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Dni buscado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Book Antiqua", 1, 12))); // NOI18N
         jPanel1.add(txtDni1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, 240, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 600));
@@ -155,11 +155,11 @@ public class FrmDoctor extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnAddPatient;
     public javax.swing.JButton btnAddPatient1;
     public javax.swing.JButton btnAddPatient2;
     public javax.swing.JButton btnAddPatient3;
     public javax.swing.JButton btnAddPatient4;
+    public javax.swing.JButton btn_buscar;
     public javax.swing.JComboBox<String> cbxEspec;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;

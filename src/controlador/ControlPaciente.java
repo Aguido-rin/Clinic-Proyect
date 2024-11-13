@@ -44,7 +44,7 @@ public class ControlPaciente implements ActionListener {
         if (e.getSource() == vista.btnAgregar) {
             Paciente pac = ProcesosPaciente.leerPaciente(vista);
             lista.InsertarFinal(pac);
-            actualizarFrame();
+            actualizarFrame();      
         }
         if (e.getSource() == vista.btnBuscardni) {
             actual = lista.BuscarDni(vista.txtDnibuscado.toString());
