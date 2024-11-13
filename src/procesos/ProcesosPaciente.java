@@ -16,7 +16,7 @@ public class ProcesosPaciente {
         fp.cbxGenero.removeAllItems();
         fp.cbxGenero.addItem("MASCULINO");
         fp.cbxGenero.addItem("FEMENINO");
-        fp.jdcFechaNacimiento.removeAll();
+       // fp.jdcFechaNacimiento.removeAll();
     }
 
     public static void limpiarEntradas(FrmPaciente fp) {
